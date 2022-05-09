@@ -113,6 +113,7 @@ h2 {
 }
 .header-flex {
     display: flex;
+    align-items: center;
 }
 
 .site-nav-flex {
@@ -135,22 +136,7 @@ h2 {
     margin-right: 0;
 }
 
-.auth-nav-flex {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
-}
 
-.auth-nav-flex .link {
-    display: inline-block;
-    padding-top: 32px;
-    padding-bottom: 32px;
-    
-}
-
-.tel-position {
-    margin-right: 50px;
-}
 
 .site-nav .link {
     color: var(--header-cl);
@@ -169,6 +155,24 @@ h2 {
 .site-nav .link-current {
     color: var(--header-cl-hover);
 }
+
+.auth-nav-flex {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.auth-nav-flex .link {
+    
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+
+}
+
+.tel-position {
+    margin-right: 50px;
+}
 .auth-nav .link {
     color: var(--main-text-cl) ;
     font-weight: 500;
@@ -183,18 +187,50 @@ h2 {
     line-height: 1.15;
 }
 
-.auth-nav-icon::before {
-    
-    /*width: 30px;
-    height: 20px;*/
-    content: " ";
-    outline: 1px solid red;
-    margin-right: 10px;
-    background-image: url(../images/smartphone.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
+.auth-nav-icon-email,
+.auth-nav-icon-tel {
+    display: inline-block;
+    align-items: center;
 }
+.auth-nav-icon-email::before {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+    
+    content: " ";
+    
+    margin-right: 10px;
+    background-image: url(../images/envelope.svg);
+    background-repeat: no-repeat;
+    
+}
+.auth-nav-icon-email:hover:before,
+.auth-nav-icon-email:hover:before {
+    display: inline-block;
+    width: 16px;
+    height: 12px;
+
+    content: " ";
+
+    margin-right: 10px;
+    background-image: url(../images/envelope\ \(hover\).svg);
+    background-repeat: no-repeat;
+
+}
+
+.auth-nav-icon-tel::before {
+    display: inline-block;
+    width: 10px;
+    height: 16px;
+
+    content: " ";
+    
+    margin-right: 10px;
+    background-image: url(../images/smartphone.svg);
+    background-repeat: no-repeat;
+    align-items: center;
+}
+    
 .nav-box {
     padding-top: 24px;
     
@@ -203,7 +239,7 @@ h2 {
 .logo-box {
     box-sizing: border-box;
     width: 145px;
-    margin-bottom: 25px;
+    /*margin-bottom: 25px;*/
 }
 /* Стилизация HERO */
 
