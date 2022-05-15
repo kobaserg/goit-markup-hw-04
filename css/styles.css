@@ -435,7 +435,7 @@ h2 {
 
 .team-list {
     padding-top: 30px;
-    padding-bottom: 30px;
+    
 }
 
 
@@ -459,18 +459,31 @@ h2 {
 
 .media-list {
     display: flex;
-    
-
-    margin: 16px 32px 30px 32px;
     width: 206px;
     height: 44px;
     justify-content: space-between;
 
-    outline: 1px solid red;
+    margin: 16px 32px 30px 32px;
+    
 }
 
+.media-item {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 44px;
+    height: 44px;
+}
+
+.media-item:hover,
+.media-item:focus {
+    background-color: var(--accent-color);
+    border-radius: 50%;
+}
 
 .icon-media {
+    
     width: 20px;
     height: 20px;
     
@@ -478,11 +491,13 @@ h2 {
 
 }
 
-.media-item {
-    
-    width: 44px;
-    height: 44px;
+.icon-media:hover,
+.icon-media:focus {
+
+    fill : var(--main-bgc)
 }
+
+
 
 
 /* Постоянные клиенты */
@@ -583,6 +598,8 @@ margin-bottom: 0;
     line-height: 1.7;
     font-style: normal;
 }
+
+
 /* Портфолио */
 
 .filter-flex {
