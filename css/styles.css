@@ -327,7 +327,7 @@ h2 {
     width: 270px;
 }
 
-.prioritie-flex::before {
+/*.prioritie-flex::before {
     content: " ";
     display: block;
     height: 120px;
@@ -349,7 +349,8 @@ h2 {
 }
 .prioritie-flex:nth-child(4)::before {
     background-image: url(../images/icon/astronaut.svg);
-}
+}*/
+
 .prioritie-flex:last-child {
     margin-right: 0;
 }
@@ -360,9 +361,29 @@ h2 {
     margin-top: 10px;
     margin-bottom: 0;
     width: 270px;
-
-   
 }
+
+.icon-prioritie {
+    display: flex;
+    width: 270px;
+    height: 120px;
+    background-color: var(--secondary-bgc);
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.icon-prioritie-size {
+    display: block;
+    
+    width: 70px;
+    height: 70px;
+    
+}
+
+/* Чем мы занимаемся */
 
 .what-we-do {
 
@@ -464,7 +485,6 @@ h2 {
     justify-content: space-between;
 
     margin: 16px 32px 30px 32px;
-    
 }
 
 .media-item {
