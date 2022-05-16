@@ -171,7 +171,7 @@ h3 {
 
 }
 
-.tel-position {
+.email-position {
     margin-right: 50px;
 }
 .auth-nav .link {
@@ -181,13 +181,6 @@ h3 {
     line-height: 1.15;
 }
 
-.auth-nav .link:focus,
-.auth-nav .link:hover {
-    color: var(--header-cl-hover);
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.15;
-}
 
 .auth-nav-icon-email,
 .auth-nav-icon-tel {
@@ -197,6 +190,16 @@ h3 {
     
 }
 
+.auth-nav-icon-email:hover .icon-email,
+.auth-nav-icon-email:focus .icon-email {
+    fill: var(--accent-color);
+}
+
+.auth-nav-icon-email:hover .link,
+.auth-nav-icon-email:focus .link {
+    color: var(--accent-color);
+}
+
 .icon-email {
     width: 16px;
     height: 12px;
@@ -204,13 +207,7 @@ h3 {
     fill: var(--main-text-cl);
 }
 
-.icon-email:hover,
-.icon-email:focus,
-.icon-tel:hover,
-.icon-tel:focus {
-    fill: var(--accent-color);
-    cursor: pointer;
-}
+
 .icon-tel {
     width: 10px;
     height: 16px;
@@ -218,7 +215,15 @@ h3 {
     fill: var(--main-text-cl);
 }
   
+.auth-nav-icon-tel:hover .icon-tel,
+.auth-nav-icon-tel:focus .icon-tel {
+    fill: var(--accent-color);
+}
 
+.auth-nav-icon-tel:hover .link,
+.auth-nav-icon-tel:focus .link {
+    color: var(--accent-color);
+}
 .nav-box {
     padding-top: 24px;
     
@@ -306,6 +311,7 @@ h3 {
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 10px; 
+    letter-spacing: 0.03em;
 }
 .our-priorities-box {
     display: flex;
@@ -328,8 +334,7 @@ h3 {
     font-size: 14px;
     line-height: 1.71;
     margin-top: 10px;
-    margin-bottom: 0;
-    width: 270px;
+    letter-spacing: 0.03em;
 }
 
 .icon-prioritie {
@@ -457,20 +462,20 @@ h3 {
 }
 
 .media-item {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     
     width: 44px;
     height: 44px;
+    background-color: var(--our-team-card-cl);
+    border-radius: 50%;
 }
 
 .media-item:hover,
 .media-item:focus {
     background-color: var(--accent-color);
-    border-radius: 50%;
 }
-
 .icon-media {
     
     width: 20px;
@@ -480,25 +485,19 @@ h3 {
 
 }
 
-.icon-media:hover,
-.icon-media:focus {
-
-    fill : var(--main-bgc)
+.media-item:hover .icon-media,
+.media-item:focus .icon-media {
+    fill: var(--our-team-card-cl);
 }
-
+    
 
 
 
 /* Постоянные клиенты */
-.icon-clients {
-    width: 106px;
-    height: 60px;
-    fill: var(--icon-cl) 
-}
-.icon-clients:hover,
-.icon-clients:focus {
-    fill: var(--accent-color);
-}
+
+
+
+
 
 .clients {
     font-weight: 700;
@@ -521,7 +520,7 @@ h3 {
 
 
 .clients-item {
-    display: block;
+    display: flex;
     width: calc((100% - 150px) / 6);
     height: 92px;
     
@@ -532,22 +531,36 @@ h3 {
     margin-bottom: 30px;
 
     padding: 16px 32px;
+    background-color: var(--our-team-card-cl);
      
 }
-
-.clients-item:hover {
-    border: 1px solid var(--accent-color);
-}
-
-
-.clients-item:nth-last-child(-n + 6) { 
-
-margin-bottom: 0;
+.clients-item:nth-last-child(-n + 6) {
+    margin-bottom: 0;
 }
 
 .clients-item:nth-child(6n) {
     margin-right: 0;
 }
+
+.icon-clients {
+    width: 106px;
+    height: 60px;
+    fill: var(--icon-cl)
+}
+
+.clients-item:hover .icon-clients,
+.clients-item:focus .icon-clients {
+    fill: var(--accent-color);
+}
+
+
+.clients-item:hover ,
+.clients-item:focus {
+    border: 1px solid var(--accent-color);
+    cursor: pointer;
+}
+
+
 
 /* Футер */
 .page-footer {
