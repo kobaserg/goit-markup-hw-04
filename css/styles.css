@@ -160,7 +160,9 @@ h3 {
 .auth-nav-flex {
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-left: auto;
+    
 }
 
 .auth-nav-flex .link {
@@ -174,29 +176,24 @@ h3 {
 .email-position {
     margin-right: 50px;
 }
-.auth-nav .link {
-    color: var(--main-text-cl) ;
+.auth-nav-flex {
     font-weight: 500;
     font-size: 14px;  
     line-height: 1.15;
 }
 
-
-.auth-nav-icon-email,
-.auth-nav-icon-tel {
+.auth-nav-list {
     display: flex;
-    justify-content: center;
+}
+
+
+.auth-nav-item {
+    display: flex;
     align-items: center;
-    
+    color: var(--main-text-cl);
 }
 
-.auth-nav-icon-email:hover .icon-email,
-.auth-nav-icon-email:focus .icon-email {
-    fill: var(--accent-color);
-}
-
-.auth-nav-icon-email:hover .link,
-.auth-nav-icon-email:focus .link {
+.auth-nav-item:hover {
     color: var(--accent-color);
 }
 
@@ -204,7 +201,7 @@ h3 {
     width: 16px;
     height: 12px;
     margin-right: 10px;
-    fill: var(--main-text-cl);
+    fill: currentColor;
 }
 
 
@@ -212,18 +209,10 @@ h3 {
     width: 10px;
     height: 16px;
     margin-right: 10px;
-    fill: var(--main-text-cl);
-}
-  
-.auth-nav-icon-tel:hover .icon-tel,
-.auth-nav-icon-tel:focus .icon-tel {
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 
-.auth-nav-icon-tel:hover .link,
-.auth-nav-icon-tel:focus .link {
-    color: var(--accent-color);
-}
+
 .nav-box {
     padding-top: 24px;
     
